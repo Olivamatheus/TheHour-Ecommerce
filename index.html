@@ -34,7 +34,7 @@
                 </div>
             </div>
             <div class="nav-icon-container">
-                <img src="img/cart.png">
+                <a href="carrinho/index.html" rel="next"><img src="img/cart.png" class="carrinho"></a>
                 <img src="img/menu.png" class="menu-button">
             </div>
         </div>
@@ -76,88 +76,115 @@
             </div>
         </div>
 
-        <div class="page-inner-content">
-            <h3 class="section-title">Linha Premium</h3>
-            <div class="subtitle-underline"></div>
-            <div class="cols cols-3">
-                <div class="product">
-                    <img src="img/produtos/product4 - rolex datejust.png">
-                    <p class="product-name">Rolex Day-Date 40 Silver & Gold</p>
-                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-                    <p class="product-price"><span>R$</span>302.500</p>
+        <div class="show-products">
+            <dialog>
+                <div id="modal-header">
+                    <button id="modal-close">X</button>
                 </div>
-                <div class="product">
-                    <img src="img/produtos/product7 - patek.png">
-                    <p class="product-name">Patek Philippe Nautilus</p>
-                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-                    <p class="product-price"><span>R$</span>2.395.951</p>
+                <div id="modal-page">
+                    <div class="modal-left">
+                        <div id="modal-product">
+                        <img src="">
+                        <p class="product-name"></p>
+                        <p class="rate"></p>
+                        <p class="product-price"></p>
+                        </div>
+                    </div>
+                    <div class="modal-right">
+                        <h3>Observações do item: </h3>
+                        <div id="modal-right-price">
+                            <div class="modal-right-qt">
+                                <button id="addItens">+</button>
+                                <span id="qt"></span>
+                                <button id="subItens">-</button>
+                            </div>
+                            <button class="modal-button-price"></button>
+                        </div>
+                    </div>
                 </div>
-                <div class="product">
-                    <img src="img/produtos/product5-rolex pearlmaster.png">
-                    <p class="product-name">Rolex Pearlmaster</p>
-                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                    <p class="product-price"><span>R$</span>295.590</p>
-                </div>
-                <div class="product">
-                    <img src="img/produtos/product8---patek.png">
-                    <p class="product-name">Patek Philippe Geneve</p>
-                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-                    <p class="product-price"><span>R$</span>208.950</p>
-                </div>
-                <div class="product">
-                    <img src="img/produtos/product3 - rolex-sea-dweller.png">
-                    <p class="product-name">Rolex Sea Dweller</p>
-                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-                    <p class="product-price"><span>R$</span>189.705</p>
-                </div>
-                <div class="product">
-                    <img src="img/produtos/product6---patek.png">
-                    <p class="product-name">Patek Philippe Calatrava</p>
-                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                    <p class="product-price"><span>R$</span>120.000</p>
+            </dialog>
+            <div class="page-inner-content">
+                <h3 class="section-title">Linha Premium</h3>
+                <div class="subtitle-underline"></div>
+                <div class="cols cols-3">
+                    <div class="product">
+                        <img src="img/produtos/product4 - rolex datejust.png">
+                        <p class="product-name">Rolex Day-Date 40 Silver & Gold</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                        <p class="product-price"><span>R$</span>302.500</p>
+                    </div>
+                    <div class="product">
+                        <img src="img/produtos/product7 - patek.png">
+                        <p class="product-name">Patek Philippe Nautilus</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                        <p class="product-price"><span>R$</span>968.875</p>
+                    </div>
+                    <div class="product">
+                        <img src="img/produtos/product5-rolex pearlmaster.png">
+                        <p class="product-name">Rolex Pearlmaster</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price"><span>R$</span>295.590</p>
+                    </div>
+                    <div class="product">
+                        <img src="img/produtos/product8---patek.png">
+                        <p class="product-name">Patek Philippe Geneve</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                        <p class="product-price"><span>R$</span>208.950</p>
+                    </div>
+                    <div class="product">
+                        <img src="img/produtos/product3 - rolex-sea-dweller.png">
+                        <p class="product-name">Rolex Sea Dweller</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                        <p class="product-price"><span>R$</span>189.705</p>
+                    </div>
+                    <div class="product">
+                        <img src="img/produtos/product6---patek.png">
+                        <p class="product-name">Patek Philippe Calatrava</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price"><span>R$</span>120.000</p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="page-inner-content">
-            <h3 class="section-title">Linha Popular</h3>
-            <div class="subtitle-underline"></div>
-            <div class="cols cols-3">
-                <div class="product">
-                    <img src="img/produtos/product10---iwc.png">
-                    <p class="product-name">IWC Gents 18ct Rose</p>
-                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-                    <p class="product-price"><span>R$</span>85.650</p>
-                </div>
-                <div class="product">
-                    <img src="img/produtos/product12---tag-heuer.png">
-                    <p class="product-name">Tag Heur Calibre</p>
-                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                    <p class="product-price"><span>R$</span>96.880</p>
-                </div>
-                <div class="product">
-                    <img src="img/produtos/product14---iwc.png">
-                    <p class="product-name">IWC Ingenieur Aut</p>
-                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-                    <p class="product-price"><span>R$</span>66.300</p>
-                </div>
-                <div class="product">
-                    <img src="img/produtos/product11---tag-heuer.png">
-                    <p class="product-name">Tag Heuer Carrera</p>
-                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-                    <p class="product-price"><span>R$</span>38.249</p>
-                </div>
-                <div class="product">
-                    <img src="img/produtos/product9---iwc.png">
-                    <p class="product-name">IWC Aviador Mark XX</p>
-                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-                    <p class="product-price"><span>R$</span>29.800</p>
-                </div>
-                <div class="product">
-                    <img src="img/produtos/product1 - iwc.png">
-                    <p class="product-name">IWC Portuguese</p>
-                    <p class="rate">&#9733;&#9733;&#9733;&#9734;&#9734;</p>
-                    <p class="product-price"><span>R$</span>28.906</p>
+            <div class="page-inner-content">
+                <h3 class="section-title">Linha Popular</h3>
+                <div class="subtitle-underline"></div>
+                <div class="cols cols-3">
+                    <div class="product">
+                        <img src="img/produtos/product10---iwc.png">
+                        <p class="product-name">IWC Gents 18ct Rose</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                        <p class="product-price"><span>R$</span>85.650</p>
+                    </div>
+                    <div class="product">
+                        <img src="img/produtos/product12---tag-heuer.png">
+                        <p class="product-name">Tag Heur Calibre</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price"><span>R$</span>96.880</p>
+                    </div>
+                    <div class="product">
+                        <img src="img/produtos/product14---iwc.png">
+                        <p class="product-name">IWC Ingenieur Aut</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                        <p class="product-price"><span>R$</span>66.300</p>
+                    </div>
+                    <div class="product">
+                        <img src="img/produtos/product11---tag-heuer.png">
+                        <p class="product-name">Tag Heuer Carrera</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                        <p class="product-price"><span>R$</span>38.249</p>
+                    </div>
+                    <div class="product">
+                        <img src="img/produtos/product9---iwc.png">
+                        <p class="product-name">IWC Aviador Mark XX</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                        <p class="product-price"><span>R$</span>29.800</p>
+                    </div>
+                    <div class="product">
+                        <img src="img/produtos/product1 - iwc.png">
+                        <p class="product-name">IWC Portuguese</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9734;&#9734;</p>
+                        <p class="product-price"><span>R$</span>28.906</p>
+                    </div>
                 </div>
             </div>
         </div>
