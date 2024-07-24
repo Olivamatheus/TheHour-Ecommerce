@@ -1,4 +1,5 @@
- 
+
+
 
 :root {
     --cor0: #FFE2D3;
@@ -152,6 +153,7 @@ nav ul li a {
     border: 0;
     outline: 0;
     background-color: var(--cor4);
+    color: var(--cor0);
     font-size: 15px;
 }
 
@@ -171,26 +173,12 @@ nav ul li a {
 }
 
 
-.header-bottom-side {
+.copyright {
     background-color: var(--cor4);
-    max-width: 800px;
-    height: 150px;
-    margin: 50px auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    color: var(--cor0);
+    padding: 2rem 0;
+    text-align: center;
 }
-
-.show-products {
-    background-color: var(--cor0);
-    width: 100px;
-    height: 100px;
-}
-
-.show-products img {
-    width: 100%;
-}
-
 
 
 @media (max-width: 800px) {
@@ -206,6 +194,9 @@ nav ul li a {
         top: 80%;
         display: none;
     }
+    .header-inner-content {
+        height: 60px;
+    }
 
     .show-menu nav {
         display: block;
@@ -220,122 +211,217 @@ nav ul li a {
         padding: 0.8rem;
     }
 
+    .copyright {
+        background-color: var(--cor4);
+        color: var(--cor0);
+        padding: 2rem 0;
+        text-align: center;
+    }
+    
+
 }
 
-
-.cart-list {
-    max-width: 800px;
-    margin: 50px auto 0;
-}
-
-#selec-prods {
-    background-color: white;
-    max-width: 600px;
-    height: 80px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 20px auto;
-    border-bottom: 3px solid var(--cor4);
-}
-
-#selec-prods > img {
-    width: 100px;
-    height: 80px;
-    margin-bottom: 10px;
-    font-size: 0.7rem;
-    text-align: center;
-    align-items: end;
-}
-
-#selec-prods > p {
-    width: 100px;
-    height: 40px;
-    font-size: 0.6rem;
-    color: var(--cor5);
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#selec-prods button {
-    width: 80px;
-    height: 30px;
-    background-color: white;
-    color: var(--cor5);
-    border: 2px solid var(--cor4);
-    margin-right: 3px;
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-#selec-prods button:hover {
-    background-color: var(--cor5);
-    color: var(--cor1);
-}
-
-.total-price {
-    max-width: 600px;
-    margin: auto;
-    display: flex;
-    justify-content: end;
-}
-
-.value {
-    width: 120px;
-    height: 40px;
+.container {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    border: 2px solid var(--cor4);
-    color: var(--cor5);
-    margin-right: 3px;
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-.value p {
-    max-height: 40px;
-    font-size: 0.8rem;
-    display: flex;
     align-items: center;
-    margin: auto;
 }
 
-.value:hover {
-    background-color: var(--cor5);
-    color: var(--cor1);
+.container-content {
+    width: 550px;
+    height: 560px;
+    margin: 20px auto;
 }
 
-.finish {
-    max-width: 800px;
+#top {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin: 20px auto 30px auto;
+}
+
+#top-box {
+    width: 300px;
+    height: 100px;
+}
+
+#top-box p {
+    display: none;
+    text-align: justify;
+    font-size: 1rem;
+    color: var(--cor4);
+}
+
+#top-click {
+   width: 30px; 
+   height: 30px;
+   margin-right: 7px;
+   cursor: pointer;
+   transition: 0.4s;
+}
+
+#top-click:hover {
+    transform: translateY(-5px);
+}
+
+#top-click img {
+    width: 30px;
+    height: 30px;
+}
+
+#right-box {
+    width: 500px;
+    height: 280px;
+    display: flex;
+    justify-content: end;
+    margin-left: 42px;
+}
+
+#right-box img {
+    width: 300px;
+    height: 280px;
+    opacity: 85%;
+    
+}
+
+#right-click {
+    width: 40px;
+    height: 40px;
+    margin: auto 0;
     padding-top: 10px;
-}
-
-.finish button {
-    background-color: white;
-    color: var(--cor5);
-    border: 2px solid var(--cor4);
-    width: 250px;
-    height: 60px;
     cursor: pointer;
     transition: 0.4s;
 }
 
-.finish button:hover {
-    background-color: var(--cor5);
-    color: var(--cor1);
+#right-click img {
+    width: 30px;
+    height: 30px;
 }
 
-.copyright {
-    background-color: var(--cor4);
-    color: var(--cor0);
-    padding: 2rem 0;
-    text-align: center;
-    margin: auto;
+#right-click:hover {
+    transform: translateX(5px);
+}
+
+#content-right-box {
+    width: 100px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#content-right-box img{
+    width: 100px;
+    height: 70px;
+}
+
+.img-right-box {
+    visibility: hidden;
+}
+
+#bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bottom-click img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#bottom-click img:hover {
+    transform: translateY(5px);
+}
+
+#bottom-box {
+    width: 300px;
+    height: 100px;
+}
+
+#bottom-box p {
+    display: none;
+    color: var(--cor4);
+}
+
+
+@media (max-width: 800px) {
+
+    .container-content {
+        width: 380px;
+        height: 740px;
+        margin: 0;
+    }
+
+
+    #top-box {
+        width: 300px;
+        height: 50px;
+        margin-top: 70px;
+    }
+
+    #top-box p {
+        font-size: 0.6rem;
+    }
+
+    #top-click, #top-click img {
+        width: 20px;
+        height: 20px;
+    }
+
+    #right-box {
+        width: 354px;
+        height: 200px;
+        margin: 0;
+    }
+
+    #right-box img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #right-click, #right-click img {
+        width: 20px;
+        height: 20px;
+        padding: 2px 0 0;
+    }
+
+    #content-right-box {
+        width: 60px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    #content-right-box img{
+        width: 60px;
+        height: 40px;
+    }
+
+    #bottom-box {
+        width: 225px;
+        height: 50px;
+        margin: 0 auto 20px; 
+    }
+
+    #bottom-box p {
+        font-size: 0.6rem;
+        margin-top: 10px;
+    }
+
+    #bottom-click, #bottom-click img {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+
+    .copyright {
+        font-size: 0.5rem;
+    }
+
 }

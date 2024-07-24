@@ -11,17 +11,19 @@
 
     <div class="navbar">   
         <div class="header-inner-content">
-            <div class="logo">
-                <h1>The<span>Hour</span></h1>
-                <img src="../img/watch.png">
-            </div>
+            <a href="../index.html" rel="next">
+                <div class="logo">
+                    <h1>The<span>Hour</span></h1>
+                    <img src="../img/watch.png">
+                </div>
+            </a>
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>Produtos</li>
-                    <li>Sobre</li>
-                    <li>Contatos</li>
-                    <li>Conta</li>
+                    <li><a href="../index.html" rel="prev">Home</a></li>
+                    <li><a href="../index.html" rel="prev">Produtos</a></li>
+                    <li><a href="../sobre/index.html">Sobre</a></li>
+                    <li><a href="#footer">Contatos</a></li>
+                    <li><a href="../carrinho/index.html">Compra</a></li>
                 </ul>
             </nav>
             <div class="search-box">
@@ -36,7 +38,7 @@
                 </div>
             </div>
             <div class="nav-icon-container">
-                <img src="../img/cart.png">
+                <a href="../carrinho/index.html" rel="next"><img src="../img/cart.png" class="carrinho"></a>
                 <img src="../img/menu.png" class="menu-button">
             </div>
         </div>
@@ -66,17 +68,31 @@
 
         <div class="cart-list">
             <div id="selec-prods">
-                <img src="">
-                <p class="prod-cart-name"></p>
-                <p class="quant"></p>
-                <p class="price"></p>
+                <img src="../img/produtos/product7 - patek.png">
+                <p class="prod-cart-name">Patek Philippe Nautilus</p>
+                <p class="quant">1</p>
+                <p class="price"><span>R$</span>968.875</p>
+                <button class="remove-item">Remover</button>
+            </div>
+            <div id="selec-prods">
+                <img src="../img/produtos/product4 - rolex datejust.png">
+                <p class="prod-cart-name">Rolex Day-Date 40 Silver & Gold</p>
+                <p class="quant"2</p>
+                <p class="price"><span>R$</span>605.000</p>
+                <button class="remove-item">Remover</button>
+            </div>
+            <div id="selec-prods">
+                <img src="../img/produtos/product6---patek.png">
+                <p class="prod-cart-name">Patek Philippe Calatrava</p>
+                <p class="quant">1</p>
+                <p class="price"><span>R$</span>120.000</p>
                 <button class="remove-item">Remover</button>
             </div>
         </div>
 
         <div class="total-price">
             <div class="value">
-
+                <p><span>R$</span>1.693.875</p>
             </div>
         </div>
 
@@ -85,6 +101,16 @@
         </div>
 
     </main>
+
+
+    <footer>
+        <hr class="page-inner-content">
+        <div class="page-inner-content copyright" id="footer">
+            <p>Copyright - Oliva 🐦 </p>
+            <p>mathoojobs@gmail.com / 71 99312-6257</p>
+        </div>
+    </footer>
+
 
 
 <script src="../script.js"></script>

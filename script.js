@@ -1,21 +1,13 @@
+
+
+
+
+
+
 // 1 - Search Box
 let searchBox = document.querySelector('.search-box');
 let lupa = document.querySelector('.lupa-search');
 let closeButton = document.querySelector('.close-button');
-// 2 - Menu Mobile
-const navbar = document.querySelector(".navbar");
-const menuButton = document.querySelector(".menu-button");
-// 3 - Modal Products
-let products = document.querySelectorAll(".product");
-const modal = document.querySelector("dialog");
-// 4.0 - Carrinho
-let selecProduct = document.getElementById('selec-prods');
-let cart = [];
-// 4.1 - Adicionar ao Carrinho
-let addCart = document.querySelector(".modal-button-price");
-
-
-
 // 1
 lupa.addEventListener('click', ()=> {
     searchBox.classList.add('ativar');
@@ -24,12 +16,24 @@ lupa.addEventListener('click', ()=> {
 closeButton.addEventListener('click', ()=> {
     searchBox.classList.remove('ativar');
 })
+
+// 2 - Menu Mobile
+const navbar = document.querySelector(".navbar");
+const menuButton = document.querySelector(".menu-button");
 // 2
 menuButton.addEventListener('click', () => {
     navbar.classList.toggle("show-menu");
 })
 
+// 4.0 - Carrinho
+let selecProduct = document.getElementById('selec-prods');
+let cart = [];
+// 4.1 - Adicionar ao Carrinho
+let addCart = document.querySelector(".modal-button-price");
 
+// 3 - Modal Products
+let products = document.querySelectorAll(".product");
+const modal = document.querySelector("dialog");
 // 3
 products.forEach(function(element) {
     
@@ -110,17 +114,6 @@ products.forEach(function(element) {
 
         addCart.addEventListener('click', () => {
         
-            cart.push(element);
-        
-            
-        // let prodCartImg = selecProduct.getElementsByTagName('img');
-
-
-        // // prodCartImg.innerHTML = modalProductImg;
-
-        // prodCartImg.setAttribute("src", element.getElementsByTagName('img')[0].src);
-
-
             qtItens = 1;
             modal.close();
         })
@@ -138,4 +131,50 @@ products.forEach(function(element) {
         })
     
     
+})
+
+
+//5 - Arrows pág. Sobre
+const topButton = document.getElementById("top-click");
+
+// 5
+topButton.addEventListener('click', () => {
+    const topBox = document.getElementById("top-box");
+    const topContent = topBox.getElementsByTagName('p')[0];
+
+    if (topContent.style.display === "none") {
+        topContent.style.display = "block";
+    } else {
+        topContent.style.display = "none";
+    }
+})
+
+
+const rightButton = document.getElementById("right-click");
+
+rightButton.addEventListener('click', () => {
+    const rightLogo = document.getElementById("content-right-box");
+    const rightContent = rightLogo.querySelectorAll('img');
+    console.log(rightContent);
+
+    rightContent.forEach(function(rightContent){
+        if (rightContent.style.visibility === "hidden") {
+            rightContent.style.visibility = "visible";
+        } else {
+            rightContent.style.visibility = "hidden";
+        }
+    })
+    });
+
+
+const bottomButton = document.getElementById("bottom-click");
+
+bottomButton.addEventListener('click', () => {
+    const bottomBox = document.getElementById("bottom-box");
+    const bottomContent = bottomBox.getElementsByTagName('p')[0];
+    if (bottomContent.style.display === "none") {
+        bottomContent.style.display = "block";
+    } else {
+        bottomContent.style.display = "none";
+    }
 })
